@@ -8,27 +8,31 @@
 </head>
 
 <body>
-
     <h2>This is HTML form tutorial</h2>
     <form action="backend.php">
+        <label for="name"> Name</label>
         <div>
-            Name: <input type="text" name="myName">
+            <input type="text" name="myName">
         </div>
         <br>
+        <label for="roll"> Roll</label>
         <div>
-            Roll: <input type="text" name="myRoll">
+            <input type="text" name="myRoll">
         </div>
         <br>
+        <label for="email"> Email</label>
         <div>
-            Email: <input type="email" name="myEmail">
+             <input type="email" name="myEmail">
         </div>
         <br>
+        <label for="date"> Date</label>
         <div>
-            Date: <input type="date" name="myDate">
+             <input type="date" name="myDate">
         </div>
         <br>
+        <label for="bonus"> Bonus</label>
         <div>
-            Bonus: <input type="number" name="myBonus">
+             <input type="number" name="myBonus">
         </div>
         <br>
         <div>
@@ -41,10 +45,20 @@
         </div>
         <br>
         <div>
-        Write about yourself :<br><textarea name="myText" cols="90" rows="10"></textarea>
+            Write about yourself :<br><textarea name="myText" cols="90" rows="10"></textarea>
         </div>
         <br>
 
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="Ind" selected>Indica</option>
+                <option value="swf" selected>Swift</option>
+                <option value="tata" selected>Tata Harrier</option>
+                <option value="maruti" selected>Maruti Suzuki</option>
+            </select>
+        </div>
+        <br>
         <div>
             <input type="submit" value="Submit Now">
             <input type="reset" value="Reset Now">
